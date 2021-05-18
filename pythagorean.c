@@ -6,12 +6,40 @@ int main(void)
 	a = get_float("side 1 ");
 	b = get_float("side 2 ");
 	c = get_float("side 3 ");
-	if(a*a+b*b==c*c)
+	
+	if(a>b&&a>c)
+	
+		if(b*b+c*c==a*a)
+		{
+		printf("Yes\n");		
+		}
+		else
+		{
+		printf("No\n");
+		}
+	
+	else if(b>a&&b>c)
 	{
-		printf("Yes");		
+		if(a*a+c*c==b*b)
+		{
+		printf("Yes\n");
+		}
+		else
+		{
+		printf("No\n");
+		}
 	}
 	else
 	{
-		printf("No");
+		if(a*a+b*b==c*c)
+		{
+		printf("Yes\n");
+		}
+		else
+		{
+		printf("No\n");
+		}
 	}
+	
+	
 }
