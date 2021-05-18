@@ -9,11 +9,11 @@ int main(void)
 	r = get_int("Number of rows ");
 	if(p==1)
 	 {
-	      for(i=r;i>=1;--i)
+	      for(i=r;i>=1;i--)
 	       {
 	          for(j=1;j<=i;++j)
 	           {
-		    printf(" #");
+		    printf("#");
 		    }
 		    printf("\n");
 		}
